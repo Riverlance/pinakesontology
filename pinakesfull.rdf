@@ -82,6 +82,8 @@ Por exemplo, o periódico Applied economics quarterly. Supplement (ISSN 1612-212
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isContainedIn"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Colecao"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#PublicacaoSeriada"/>
+        <rdfs:comment xml:lang="pt-br">Indica a relação inversa onde uma Coleção contém uma Publicação Seriada.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="pt-br">Esta propriedade conecta uma entidade com a entidade que ela contém.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="pt-br">Contém</rdfs:label>
     </owl:ObjectProperty>
     
@@ -93,7 +95,9 @@ Por exemplo, o periódico Applied economics quarterly. Supplement (ISSN 1612-212
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isCreatedExpressaoBy"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Agente"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Expressao"/>
-        <rdfs:label>criou Expressão</rdfs:label>
+        <rdfs:comment xml:lang="pt-br">Indica a relação onde um Agente criou uma expressão, como uma obra de arte, um texto, uma música, etc.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="pt-br">Esta propriedade conecta um Agente entidade com a expressão que foi criada por ela.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="pt-br">Criou Expressão</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -104,6 +108,8 @@ Por exemplo, o periódico Applied economics quarterly. Supplement (ISSN 1612-212
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isCreatedManifestacaoBy"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Agente"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Manifestacao"/>
+        <rdfs:comment xml:lang="pt-br">Indica a relação onde uma entidade criou uma manifestação, como uma edição física de um livro, uma exibição de arte, etc.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="pt-br">Esta propriedade conecta um Agente  com a manifestação que foi criada por ele.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="pt-br">criou Manifestação</rdfs:label>
     </owl:ObjectProperty>
     
@@ -115,7 +121,8 @@ Por exemplo, o periódico Applied economics quarterly. Supplement (ISSN 1612-212
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isCreatedObraBy"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Agente"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Obra"/>
-        <rdfs:comment xml:lang="pt-br">propriedade inversa da propriedade de objeto &quot;foi criado por&quot; (isCreatedBy)</rdfs:comment>
+        <rdfs:comment xml:lang="pt-br">Indica a relação onde um Agente criou uma obra, como um livro, uma pintura, uma composição musical, etc.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="pt-br">Esta propriedade conecta um Agente com a obra que foi criada por ele.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="pt-br">criou obra</rdfs:label>
     </owl:ObjectProperty>
     
@@ -127,7 +134,8 @@ Por exemplo, o periódico Applied economics quarterly. Supplement (ISSN 1612-212
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isDistributedBy"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Agente"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Manifestacao"/>
-        <rdfs:comment xml:lang="pt-br">Relacionamento inverso da propriedade &quot;é distribuida por&apos; (isDistributedBy).</rdfs:comment>
+        <rdfs:comment xml:lang="pt-br">Indica a relação inversa onde um Agente distribui manifestação</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="pt-br">Esta propriedade conecta um Agente com a manifestação distribuida.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="pt-br">distribuiu</rdfs:label>
     </owl:ObjectProperty>
     
@@ -139,7 +147,8 @@ Por exemplo, o periódico Applied economics quarterly. Supplement (ISSN 1612-212
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isExemplifiedBy"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Item"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Manifestacao"/>
-        <rdfs:isDefinedBy xml:lang="pt-br">Propriedade inversa da propriedade de objeto &quot;é exemplificada por&quot; (isExemplifiedby)</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="pt-br">Esta propriedade conecta um Item com o Manifestação exemplificada por ele.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="pt-br">Indica a relação onde um Item exemplifica ou representa uma Manifestação específica.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="pt-br">exemplifica</rdfs:label>
     </owl:ObjectProperty>
     
@@ -152,6 +161,7 @@ Por exemplo, o periódico Applied economics quarterly. Supplement (ISSN 1612-212
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Biblioteca"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Endereco"/>
         <rdfs:comment xml:lang="pt-br">Localiza uma Biblioteca a um endereço postal ou coordenadas geográficas</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="pt-br">Esta propriedade conecta uma entidade com o endereço que ela possui.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="pt-br">Tem endereço</rdfs:label>
     </owl:ObjectProperty>
     
@@ -165,7 +175,7 @@ Por exemplo, o periódico Applied economics quarterly. Supplement (ISSN 1612-212
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#NaturezaAdministrativa"/>
         <rdfs:comment xml:lang="pt">Essa propriedade é usada para relacionar uma instituição a um tipo específico de natureza administrativa que ela possui.</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="pt-br">Refere-se à associação de uma instituição a uma categoria de natureza administrativa, indicando o tipo de administração que caracteriza a instituição.</rdfs:isDefinedBy>
-        <rdfs:isDefinedBy xml:lang="pt-br">Tem Natureza Administrativa</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="pt-br">Tem Natureza Administrativa</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -220,7 +230,7 @@ Por exemplo, o romance The Sittaford Mystery, de Agatha Christie, publicado em 1
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Lugar"/>
         <rdfs:comment xml:lang="pt-br">Na maioria das implementações, esse relacionamento pode ser refinado para refletir a natureza exata da associação, por exemplo: lugar de concepção ou criação da obra, lugar de criação da expressão (por exemplo, lugar da apresentação musical), lugar de publicação ou fabricação, lugar atual ou anterior de um item e a localização de um agente.</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="pt-br">Este relacionamento vincula qualquer entidade com uma determinada extensão de espaço</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="pt-br">possui associação com Lugar</rdfs:label>
+        <rdfs:label xml:lang="pt-br">Lugar possui associação com</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -232,6 +242,7 @@ Por exemplo, o romance The Sittaford Mystery, de Agatha Christie, publicado em 1
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Pais"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Localidade"/>
         <rdfs:comment xml:lang="pt-br">Vincula instancias entre países e cidades.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="pt-br">Esta propriedade conecta um País com a cidade específica que ele possui ou com a qual está associada.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="pt-br">Tem cidade ou localidade</rdfs:label>
     </owl:ObjectProperty>
     
@@ -282,6 +293,8 @@ Por exemplo, o romance The Sittaford Mystery, de Agatha Christie, publicado em 1
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isCountryOf"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#UnidadeFederativa"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Pais"/>
+        <rdfs:comment xml:lang="pt-br">Indica a relação onde uma Unidade Federativa possui um país associado a ela.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="pt-br">Esta propriedade conecta uma entidade com o país específico que ela possui ou com o qual está associada.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="pt-br">Tem país</rdfs:label>
     </owl:ObjectProperty>
     
@@ -321,6 +334,7 @@ nomen associada a mais de uma instância de res, mesmo que o esquema em questão
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isFederativeUnitOf"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Localidade"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#UnidadeFederativa"/>
+        <rdfs:comment xml:lang="pt-br">Indica a relação onde uma Cidade possui uma unidade federativa associada a ela.</rdfs:comment>
         <rdfs:label xml:lang="pt-br">Tem unidade federativa</rdfs:label>
     </owl:ObjectProperty>
     
@@ -329,9 +343,10 @@ nomen associada a mais de uma instância de res, mesmo que o esquema em questão
     <!-- http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#hasFreeTerm -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#hasFreeTerm">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isFreeTerm"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isFreeTermOf"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#PublicacaoSeriada"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#TermoLivre"/>
+        <rdfs:comment xml:lang="pt-br">Indica a relação onde uma entidade possui um termo livre associado a ela.</rdfs:comment>
         <rdfs:label xml:lang="pt-br">Tem termo livre</rdfs:label>
     </owl:ObjectProperty>
     
@@ -344,7 +359,7 @@ nomen associada a mais de uma instância de res, mesmo que o esquema em questão
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#PublicacaoSeriada"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#HomePage"/>
         <rdfs:comment xml:lang="pt-br">Relaciona cada Publicacao seriada a endereço(s) eletrônico(s)</rdfs:comment>
-        <rdfs:label xml:lang="pt-br">Possui home page</rdfs:label>
+        <rdfs:label xml:lang="pt-br">Possui homepage</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -367,7 +382,8 @@ nomen associada a mais de uma instância de res, mesmo que o esquema em questão
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isInstituitonAddressOf"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Instituicao"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Endereco"/>
-        <rdfs:label xml:lang="pt-br">Instituição tem endereço</rdfs:label>
+        <rdfs:comment xml:lang="pt-br">Indica a relação onde uma entidade possui um endereço de instituição associado a ela.</rdfs:comment>
+        <rdfs:label xml:lang="pt-br">tem endereço de instituição</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -378,7 +394,8 @@ nomen associada a mais de uma instância de res, mesmo que o esquema em questão
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isKnowledgeAreaTableOf"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#AreaDeConhecimento"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#TabelaAreaDeConhecimento"/>
-        <rdfs:label xml:lang="pt-br">Tem tabela de área de conhecimento</rdfs:label>
+        <rdfs:comment xml:lang="pt-br">Indica a relação onde uma entidade possui uma tabela de área de conhecimento associada a ela.</rdfs:comment>
+        <rdfs:label xml:lang="pt-br">Tem tabela</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -389,6 +406,7 @@ nomen associada a mais de uma instância de res, mesmo que o esquema em questão
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isKnowledgeFieldOf"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#PublicacaoSeriada"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#AreaDeConhecimento"/>
+        <rdfs:comment xml:lang="pt-br">Indica a relação onde uma entidade possui um área de conhecimento associado a ela.</rdfs:comment>
         <rdfs:label xml:lang="pt-br">Tem área de conhecimento</rdfs:label>
     </owl:ObjectProperty>
     
@@ -400,17 +418,9 @@ nomen associada a mais de uma instância de res, mesmo que o esquema em questão
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#libraryTypeOf"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Biblioteca"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#TipoDeBiblioteca"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#hasLocationOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#hasLocationOf">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isLocatedIn"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Localidade"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Endereco"/>
-        <rdfs:label xml:lang="pt-br">É Localização de</rdfs:label>
+        <rdfs:comment xml:lang="pt-br">Indica o tipo de biblioteca a que uma entidade está associada.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="pt-br">Esta propriedade conecta uma entidade com o tipo específico de biblioteca ao qual ela pertence, como uma biblioteca setorial, universitária, etc</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="pt-br">Tipo de Biblioteca de</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -528,6 +538,7 @@ Por exemplo, Schubert, Franz, 1797-1828. Sonatas, piano, D. 959, A major’ poss
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isPlacePublicationOf"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#PublicacaoImprenta"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Localidade"/>
+        <rdfs:comment xml:lang="pt-br">Indica a relação onde uma entidade possui um local de publicação associado a ela.</rdfs:comment>
         <rdfs:label xml:lang="pt-br">Tem cidade ou local de publicação</rdfs:label>
     </owl:ObjectProperty>
     
@@ -563,6 +574,9 @@ Por exemplo, Schubert, Franz, 1797-1828. Sonatas, piano, D. 959, A major’ poss
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#publisherOf"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#PublicacaoImprenta"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Editora"/>
+        <rdfs:comment xml:lang="pt-br">Indica a relação inversa onde uma entidade foi publicada por outra entidade.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="pt-br">Esta propriedade conecta a entidade que foi publicada com a entidade que a publicou.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="pt-br">Possui editora</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -574,7 +588,7 @@ Por exemplo, Schubert, Franz, 1797-1828. Sonatas, piano, D. 959, A major’ poss
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#UnidadeFederativa"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Regiao"/>
         <rdfs:comment xml:lang="pt-br">Vincula cada Unidade Federativa ou Estado a uma Região.</rdfs:comment>
-        <rdfs:label xml:lang="pt-br">Possui subdivisão regional</rdfs:label>
+        <rdfs:label xml:lang="pt-br">Possui região</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -612,7 +626,7 @@ Por exemplo, Schubert, Franz, 1797-1828. Sonatas, piano, D. 959, A major’ poss
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Manifestacao"/>
         <rdfs:comment xml:lang="pt-br">No caso de relacionamento entre item e manifestação, o item específico utilizado como fonte de reprodução é significativo, seja por sua procedência ou devido a características específicas do item, como anotações ou marcas de propriedade</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="pt-br">Este é o relacionamento entre um item de uma manifestação e outra manifestação, que fornece ao usuário final exatamente o mesmo conteúdo e no qual  um item específico forneceu uma fonte para a criação de uma manifestação subsequente, como fac-símiles, reproduções, reimpressões e reedições.</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="pt-br">tem reprodução Item</rdfs:label>
+        <rdfs:label xml:lang="pt-br">tem reprodução (Item)</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -636,6 +650,7 @@ Por exemplo, Schubert, Franz, 1797-1828. Sonatas, piano, D. 959, A major’ poss
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isSupportOf"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#ISSN"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#MeioFisico"/>
+        <rdfs:comment xml:lang="pt-br">Indica a relação onde uma entidade possui um suporte ou meio físico associado a ela.</rdfs:comment>
         <rdfs:label xml:lang="pt-br">Tem meio físico</rdfs:label>
     </owl:ObjectProperty>
     
@@ -647,6 +662,7 @@ Por exemplo, Schubert, Franz, 1797-1828. Sonatas, piano, D. 959, A major’ poss
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isSupportOfCollection"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Colecao"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#MeioFisico"/>
+        <rdfs:comment xml:lang="pt-br">Indica a relação ondei ua coleção tem  suporte ou meio físico associados a ela.</rdfs:comment>
         <rdfs:label xml:lang="pt-br">tem suporte Coleção</rdfs:label>
     </owl:ObjectProperty>
     
@@ -671,6 +687,7 @@ Por exemplo, Schubert, Franz, 1797-1828. Sonatas, piano, D. 959, A major’ poss
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isUnitOf"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Biblioteca"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Unidade"/>
+        <rdfs:comment xml:lang="pt-br">Esta propriedade conecta uma entidade com a unidade que ela possui.</rdfs:comment>
         <rdfs:comment xml:lang="pt-br">Relaciona obrigatoriamente uma Biblioteca a no máximo uma Unidade</rdfs:comment>
         <rdfs:label xml:lang="pt-br">Possui unidade</rdfs:label>
     </owl:ObjectProperty>
@@ -694,6 +711,8 @@ Por exemplo, Schubert, Franz, 1797-1828. Sonatas, piano, D. 959, A major’ poss
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isAddressOf">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Endereco"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Biblioteca"/>
+        <rdfs:comment xml:lang="pt-br">Indica a relação onde uma entidade é o endereço de outra entidade.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="pt-br">Esta propriedade conecta uma entidade ao seu endereço específico</rdfs:isDefinedBy>
         <rdfs:label xml:lang="pt-br">É endereço de</rdfs:label>
     </owl:ObjectProperty>
     
@@ -733,7 +752,7 @@ Por exemplo, Schubert, Franz, 1797-1828. Sonatas, piano, D. 959, A major’ poss
  
 Ao contrário do relacionamento todo-parte entre expressões, as expressões selecionadas para aparecer juntas na manifestação agregada não se tornam componentes da expressão agregadora. Além disso, o relacionamento entre essas expressões não é uma característica inerente das obras que essas expressões realizam e, portanto, não se aplica a outras expressões dessas obras.</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="pt-br">Esse relacionamento indica que uma expressão específica de uma obra foi escolhida como parte do plano de uma expressão agregadora</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="pt-br">Foi  agragado por</rdfs:label>
+        <rdfs:label xml:lang="pt-br">Foi  agregado por</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -754,8 +773,9 @@ Ao contrário do relacionamento todo-parte entre expressões, as expressões sel
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isAssociatedWithLugar">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Lugar"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Res"/>
-        <rdfs:comment xml:lang="pt-br">Propriedade inversa da propriedade de objeto &quot;possui asscoiação com Lugar&quot; (hasAssociationWithLugar)</rdfs:comment>
-        <rdfs:label xml:lang="pt-br">é associado com Lugar</rdfs:label>
+        <rdfs:comment xml:lang="pt-br">Indica a relação onde um lugar está associada com outra entidade.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="pt-br">Esta propriedade relaciona um Lugar com outra entidade com a qual está associada.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="pt-br">Lugar é associado com</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -768,7 +788,7 @@ Ao contrário do relacionamento todo-parte entre expressões, as expressões sel
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Unidade"/>
         <rdfs:comment xml:lang="pt-br">Associa uma Unidade com outra(s) Unidade(s).</rdfs:comment>
         <rdfs:isDefinedBy>Propriedade que faz associaçãoes entre instancias da classe Unidade.</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="pt-br">Possui uma associação</rdfs:label>
+        <rdfs:label xml:lang="pt-br">é associação de</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -778,7 +798,8 @@ Ao contrário do relacionamento todo-parte entre expressões, as expressões sel
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isCityOf">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Localidade"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Pais"/>
-        <rdfs:label xml:lang="pt-br">propridade inversa de &quot;possui cidade&quot; (hascity), relaciona uma país a uma cidade.</rdfs:label>
+        <rdfs:comment xml:lang="pt-br">Indica a relação inversa onde uma cidade está associada a um país específico.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="pt-br">Esta propriedade conecta uma cidade com o País que a possui ou com a qual está associada.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="pt-br">É cidade de</rdfs:label>
     </owl:ObjectProperty>
     
@@ -789,7 +810,8 @@ Ao contrário do relacionamento todo-parte entre expressões, as expressões sel
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isCollectionOf">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Colecao"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Biblioteca"/>
-        <rdfs:comment xml:lang="pt-br">Propriedade inversa de &quot;possui coleção&quot; (hasCollection). Relaciona uma biblioteca à coleções que ela disponibiliza.</rdfs:comment>
+        <rdfs:comment xml:lang="pt-br">Propriedade que  relaciona uma biblioteca à coleções que ela disponibiliza.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="pt-br">Esta propriedade conecta uma entidade com a entidade que faz parte de sua coleção.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="pt-br">é coleção de</rdfs:label>
     </owl:ObjectProperty>
     
@@ -800,6 +822,8 @@ Ao contrário do relacionamento todo-parte entre expressões, as expressões sel
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isContactOf">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Contato"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Biblioteca"/>
+        <rdfs:comment xml:lang="pt-br">Indica a relação onde uma entidade é o contato de outra entidade.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="pt-br">Esta propriedade conecta informações de contato a uma biblioteca específica.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="pt-br">Informações de contato de</rdfs:label>
     </owl:ObjectProperty>
     
@@ -811,6 +835,7 @@ Ao contrário do relacionamento todo-parte entre expressões, as expressões sel
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#PublicacaoSeriada"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Colecao"/>
         <rdfs:comment xml:lang="pt-br">Relacionamento entre uma instância de Publicação Seriada com instância(s) de Coleção.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="pt-br">Esta propriedade conecta  publicação seriada com a coleção ou coleções onde ela está contida.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="pt-br">Contida em</rdfs:label>
     </owl:ObjectProperty>
     
@@ -821,6 +846,8 @@ Ao contrário do relacionamento todo-parte entre expressões, as expressões sel
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isControlledSubjectOf">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#AssuntoControlado"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#PublicacaoSeriada"/>
+        <rdfs:comment xml:lang="pt-br">Indica a relação em que uma entidade é o assunto controlado de outra entidade.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="pt-br">Esta propriedade conecta uma entidae com um assunto controlado</rdfs:isDefinedBy>
         <rdfs:label xml:lang="pt-br">É assunto controlado de</rdfs:label>
     </owl:ObjectProperty>
     
@@ -831,6 +858,8 @@ Ao contrário do relacionamento todo-parte entre expressões, as expressões sel
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isCountryOf">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Pais"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#UnidadeFederativa"/>
+        <rdfs:comment xml:lang="pt-br">Indica a relação em que um País possui uma Unidade Federativa</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="pt-br">Esta propriedade conecta um país específico com um Estado ou UF que ele possui</rdfs:isDefinedBy>
         <rdfs:label xml:lang="pt-br">É país de</rdfs:label>
     </owl:ObjectProperty>
     
@@ -841,6 +870,7 @@ Ao contrário do relacionamento todo-parte entre expressões, as expressões sel
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isCountryPublicationOf">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Pais"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#PublicacaoSeriada"/>
+        <rdfs:comment xml:lang="pt-br">Indica a relação onde um país é o local de publicação de uma entidade.</rdfs:comment>
         <rdfs:label xml:lang="pt-br">É país de publicação</rdfs:label>
     </owl:ObjectProperty>
     
@@ -851,7 +881,9 @@ Ao contrário do relacionamento todo-parte entre expressões, as expressões sel
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isCreatedExpressaoBy">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Expressao"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Agente"/>
-        <rdfs:label xml:lang="pt-br">foi criado por (Expressão)</rdfs:label>
+        <rdfs:comment xml:lang="pt-br">Esta propriedade conecta uma expressão com o Agente que a criou.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="pt">Indica a relação inversa em que uma expressão foi criada por um Agente</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="pt-br">Expressão foi criado por</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -861,7 +893,9 @@ Ao contrário do relacionamento todo-parte entre expressões, as expressões sel
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isCreatedManifestacaoBy">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Manifestacao"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Agente"/>
-        <rdfs:label xml:lang="pt-br">foi criado por Manifestação</rdfs:label>
+        <rdfs:comment xml:lang="pt-br">Indica a relação inversa onde uma manifestação foi criada por uma entidade.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="pt-br">Esta propriedade conecta uma Manifestação com o Agente que a criou.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="pt-br">Manifestação foi criado por</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -877,7 +911,7 @@ Esse relacionamento se aplica tanto à criação da expressão original quanto a
 
 Para uma manifestação, a noção de criação inclui, em termos gerais, o processo de publicação das manifestações publicadas. A conexão lógica entre uma manifestação e um agente relacionado serve como base tanto para identificar um agente responsável pela criação de uma manifestação quanto para garantir que todas as manifestações criadas por um agente estejam vinculadas a esse agente.</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="pt-br">Este relacionamento vincula uma obra, manifestação ou expressão a um agente responsável pela criação do conteúdo intelectual ou artístico.</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="pt-br">Foi criada por</rdfs:label>
+        <rdfs:label xml:lang="pt-br">foi criada por  (obra)</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -973,9 +1007,9 @@ vários itens de uma manifestação.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isFreeTerm -->
+    <!-- http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isFreeTermOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isFreeTerm">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isFreeTermOf">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#TermoLivre"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#PublicacaoSeriada"/>
         <rdfs:comment xml:lang="pt-br">Relação entre Publicações Seriadas e Termos Livres</rdfs:comment>
@@ -989,7 +1023,8 @@ vários itens de uma manifestação.</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isHomePageOf">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#HomePage"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#PublicacaoSeriada"/>
-        <rdfs:label xml:lang="pt-br">É home page de</rdfs:label>
+        <rdfs:comment xml:lang="pt-br">: Indica a relação que vincula uma página web inicial a uma entidade</rdfs:comment>
+        <rdfs:label xml:lang="pt-br">É homepage de</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -999,6 +1034,7 @@ vários itens de uma manifestação.</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isISSNOf">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#ISSN"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#PublicacaoSeriada"/>
+        <rdfs:comment xml:lang="pt-br">Indica a relação em que um ISSN (International Standard Serial Number) está associado a uma entidade específica.</rdfs:comment>
         <rdfs:label xml:lang="pt-br">É ISSN de</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1009,6 +1045,7 @@ vários itens de uma manifestação.</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isIndexOf">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Referenciador"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#PublicacaoSeriada"/>
+        <rdfs:comment xml:lang="pt-br">relacionamento  indexador e publicações seriadas</rdfs:comment>
         <rdfs:label xml:lang="pt-br">É indexador de</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1044,7 +1081,7 @@ vários itens de uma manifestação.</rdfs:comment>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#TabelaAreaDeConhecimento"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#AreaDeConhecimento"/>
         <rdfs:comment xml:lang="pt-br">Define uma organizaçao ou categoria para Area(s) de Conhecimento</rdfs:comment>
-        <rdfs:label xml:lang="pt-br">É  tabela de área de conhecimento de</rdfs:label>
+        <rdfs:label xml:lang="pt-br">É  tabela de</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1060,12 +1097,26 @@ vários itens de uma manifestação.</rdfs:comment>
     
 
 
+    <!-- http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isLocalityOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isLocalityOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isLocatedIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Localidade"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Endereco"/>
+        <rdfs:comment xml:lang="pt-br">Indica a relação onde uma entidade é a localidade de outra entidade.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="pt-br">Esta propriedade conecta um endereço com a localidade ou ciade específica</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="pt-br">É Localidade de</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isLocatedIn -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isLocatedIn">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Endereco"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Localidade"/>
         <rdfs:comment xml:lang="pt-br">Relaciona Endereço(s) a uma Cidade.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="pt-br">Esta propriedade conecta um endereço com a localidade em que está situado.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="pt-br">Está localizado em</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1134,6 +1185,7 @@ foi modificado por encadernadora Monique Mathieu.</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isNoteOf">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Nota"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#PublicacaoSeriada"/>
+        <rdfs:comment xml:lang="pt-br">Indica a relação onde uma entidade é a nota de outra entidade.</rdfs:comment>
         <rdfs:label xml:lang="pt-br">É nota ou comentário de</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1199,6 +1251,7 @@ Música da Biblioteca Nacional da França.</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isPublicationDateOf">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#PublicacaoImprenta"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#PublicacaoSeriada"/>
+        <rdfs:comment xml:lang="pt-br">Indica a relação onde uma data de publicação está associada a uma entidade específica.</rdfs:comment>
         <rdfs:label xml:lang="pt-br">É data de publicação de</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1209,7 +1262,8 @@ Música da Biblioteca Nacional da França.</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isPublicationLanguageOf">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Idioma"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#PublicacaoSeriada"/>
-        <rdfs:label xml:lang="pt-br">É Idioma de publicação</rdfs:label>
+        <rdfs:comment xml:lang="pt-br">Indica a relação onde um idioma de publicação está associado a uma entidade específica.</rdfs:comment>
+        <rdfs:label xml:lang="pt-br">É Idioma de publicação de</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1219,6 +1273,7 @@ Música da Biblioteca Nacional da França.</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isRegionOf">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Regiao"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#UnidadeFederativa"/>
+        <rdfs:comment xml:lang="pt-br">Indica a relação onde uma entidade possui uma região associada a ela.</rdfs:comment>
         <rdfs:label xml:lang="pt-br">É  região de</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1229,6 +1284,7 @@ Música da Biblioteca Nacional da França.</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isRelatedPublicationWith">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#PublicacaoRelacionada"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#PublicacaoSeriada"/>
+        <rdfs:comment xml:lang="pt-br">Indica a relação onde uma publicação está relacionada com outra publicação.</rdfs:comment>
         <rdfs:label xml:lang="pt-br">É publicação relacionada Com</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1240,7 +1296,7 @@ Música da Biblioteca Nacional da França.</rdfs:comment>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Manifestacao"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Item"/>
         <rdfs:comment xml:lang="pt-br">Relacionamento inverso de &quot;tem reprodução Intem&quot; Manifestação e Item</rdfs:comment>
-        <rdfs:label xml:lang="pt-br">é reproducao de (Item)</rdfs:label>
+        <rdfs:label xml:lang="pt-br">é reprodução de (Item)</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1272,6 +1328,7 @@ Música da Biblioteca Nacional da França.</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isSupportOfCollection">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#MeioFisico"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Colecao"/>
+        <rdfs:comment xml:lang="pt-br">Indica a relação inversa que vincula um suporte ou meio físico a uma coleção</rdfs:comment>
         <rdfs:label xml:lang="pt-br">é suporte de Coleção</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1306,6 +1363,8 @@ Música da Biblioteca Nacional da França.</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#isUnitOf">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Unidade"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Biblioteca"/>
+        <rdfs:comment xml:lang="pt-br">Indica a relação onde uma entidade é uma unidade de outra entidadeuma biblioteca</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="pt-br">Esta propriedade conecta uma entidade com a entidade da qual ela faz parte como uma unidade.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="pt-br">É Unidade de</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1317,6 +1376,7 @@ Música da Biblioteca Nacional da França.</rdfs:comment>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#TipoDeBiblioteca"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Biblioteca"/>
         <rdfs:comment xml:lang="pt-br">Propriedade que categoriza uma Biblioteca filiada a uma Instituição ou integrada a um Sistema de bibliotecas.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="pt-br">Esta propriedade conecta o tipo de biblioteca com a entidade que pertence a este tipo específico.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="pt-br">Tipo de biblioteca de</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1400,6 +1460,7 @@ Música da Biblioteca Nacional da França.</rdfs:comment>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Editora"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#PublicacaoImprenta"/>
         <rdfs:comment xml:lang="pt-br">Define Editora(s) como parte da Imprenta de uma Publicação Seriada</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="pt-br">Esta propriedade conecta uma entidade publicadora com a entidade que foi publicada por ela.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="pt-br">É editora de</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1447,17 +1508,6 @@ Música da Biblioteca Nacional da França.</rdfs:comment>
         <rdfs:comment xml:lang="pt-br">Palavras-chave extraídas de um vocabulário controlado, que representam o assunto da publicação.</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="pt-br">Propriedade de dado que consiste em palavras-chave retiradas de um vocabulário controlado, usadas para descrever e categorizar o tema ou tópico principal de uma publicação.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="pt-br">Assunto</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#autor -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#autor">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#responsavelIntelectual"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#PublicacaoSeriada"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:label xml:lang="pt-br">Nome do autor responsável pela publicação seriada</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1588,12 +1638,44 @@ Cada algarismo do CEP possui um significado. Da esquerda para a direita, os núm
     <!-- http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#conteudo -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#conteudo">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Colecao"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#PublicacaoSeriada"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="pt-br">Contém descriçoes de publicações seriadas ou trasncrições das coleções.</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="pt-br">Propriedade de dado que representa o conteúdo de um registro, incluindo descrições de publicações seriadas ou transcrições das coleções, utilizadas para catalogação e referência.</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="pt-br">Propriedade de dado que representa o conteúdo de um registro, incluindo descrições de publicações seriadas</rdfs:isDefinedBy>
         <rdfs:label xml:lang="pt-br">Conteúdo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#conteudoColecao -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#conteudoColecao">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Colecao"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="pt-br">conteudo que contem as transcrições das coleções, utilizadas para catalogação e referência.</rdfs:comment>
+        <rdfs:label xml:lang="pt-br">Conteúdo da Coleção</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#dataAtualizacaoBiblioteca -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#dataAtualizacaoBiblioteca">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Biblioteca"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="pt-br">data que biblioteca foi atualizada pela ultima vez</rdfs:comment>
+        <rdfs:label xml:lang="pt-br">data de atualização da biblioteca</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#dataCadastroBiblioteca -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#dataCadastroBiblioteca">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Biblioteca"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="pt-br">data de registro da biblioteca no sistema pela primeira vez.</rdfs:comment>
+        <rdfs:label xml:lang="pt-br">data de cadastro da biblioteca</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1601,7 +1683,6 @@ Cada algarismo do CEP possui um significado. Da esquerda para a direita, os núm
     <!-- http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#dataDeAtualizacao -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#dataDeAtualizacao">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Biblioteca"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#PublicacaoSeriada"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="pt-br">Data em que o registro foi atualizado pela última vez</rdfs:comment>
@@ -1614,7 +1695,6 @@ Cada algarismo do CEP possui um significado. Da esquerda para a direita, os núm
     <!-- http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#dataDeCadastro -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#dataDeCadastro">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Biblioteca"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#PublicacaoSeriada"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="pt-br">Data em que o registro foi criado ou incluído no sistema.</rdfs:comment>
@@ -1630,7 +1710,7 @@ Cada algarismo do CEP possui um significado. Da esquerda para a direita, os núm
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#ano"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#PublicacaoImprenta"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:isDefinedBy xml:lang="pt-br">atributo que se refere a data final da imprenta de uma publicação conforme o padrão Marc 21.</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="pt-br">atributo que se refere a data final da imprenta de uma publicação conforme o padrão Marc 21.</rdfs:comment>
         <rdfs:label xml:lang="pt-br">data final da Imprenta</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -1655,7 +1735,7 @@ Cada algarismo do CEP possui um significado. Da esquerda para a direita, os núm
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#ano"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#PublicacaoImprenta"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:isDefinedBy xml:lang="pt-br">Atributo referente ao ano incial de uma ppublicação periódica.</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="pt-br">Atributo referente ao ano incial de uma ppublicação periódica.</rdfs:comment>
         <rdfs:label xml:lang="pt-br">Ano incial da Imprenta</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -1693,17 +1773,6 @@ Cada algarismo do CEP possui um significado. Da esquerda para a direita, os núm
         <rdfs:comment xml:lang="pt-br">Informações referentes ao ano, número e volume de uma publicação seriada.</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="pt-br">Propriedade de dado que representa as informações numéricas, como ano, número e volume, de uma publicação seriada, utilizada para catalogação e referência.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="pt-br">Designação numérica</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#editor -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#editor">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#responsavelIntelectual"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#PublicacaoSeriada"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:label xml:lang="pt-br">Nome do Editor responsável pela publicação seriada</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1764,8 +1833,8 @@ Exemplo: Marc 21.</rdfs:comment>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#PublicacaoSeriada"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="pt-br">Periodicidade da publicação seriada</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="pt-br">Frequência</rdfs:isDefinedBy>
         <rdfs:isDefinedBy xml:lang="pt-br">Propriedade de dado que representa o intervalo de tempo entre as edições ou lançamentos de uma publicação seriada, como semanal, mensal, trimestral, etc., utilizada para organizar e acompanhar a publicação periódica de conteúdos.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="pt-br">Frequência</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1845,16 +1914,7 @@ Exemplo: Marc 21.</rdfs:comment>
     <!-- http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#nome -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#nome">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Editora"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Idioma"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Instituicao"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#MeioFisico"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Referenciador"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Regiao"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#TabelaAreaDeConhecimento"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#TipoDeBiblioteca"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Unidade"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#UnidadeFederativa"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="pt-br">Designação das instâncias.</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="pt-br">Propriedade de dado que representa a designação ou nome de instâncias, utilizada para identificar e referenciar entidades específicas em sistemas e registros.</rdfs:isDefinedBy>
@@ -1871,6 +1931,105 @@ Exemplo: Marc 21.</rdfs:comment>
         <rdfs:comment xml:lang="pt-br">Nome do responsável pela Biblioteca.</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="pt-br">Esta propriedade descreve a entidade (pessoa ou organização) responsãvel pela  biblioteca.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="pt-br">Nome do responsável</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#nomeEditora -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#nomeEditora">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Editora"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="pt-br">designação da editora</rdfs:comment>
+        <rdfs:label xml:lang="pt-br">nome da Editora</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#nomeInstituicao -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#nomeInstituicao">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Instituicao"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="pt-br">Designação da Instituição</rdfs:comment>
+        <rdfs:label xml:lang="pt-br">nomde da Instituição</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#nomeMeioFisico -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#nomeMeioFisico">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#MeioFisico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="pt-br">DEsignação do meio f~isico</rdfs:comment>
+        <rdfs:label xml:lang="pt-br">nome do meio físico</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#nomeReferenciador -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#nomeReferenciador">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Referenciador"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="pt-br">Designação do referenciador</rdfs:comment>
+        <rdfs:label xml:lang="pt-br">nome do referenciador</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#nomeRegiao -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#nomeRegiao">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Regiao"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="pt-br">Designação da Região</rdfs:comment>
+        <rdfs:label xml:lang="pt-br">nome da Região</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#nomeTabela -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#nomeTabela">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#TabelaAreaDeConhecimento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="pt-br">Designação da tabela da [area de conhecimento</rdfs:comment>
+        <rdfs:label xml:lang="pt-br">nomde da tabela de ára de conhecimento</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#nomeTipoBiblioteca -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#nomeTipoBiblioteca">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#TipoDeBiblioteca"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="pt-br">Designação do tipo de biblioteca</rdfs:comment>
+        <rdfs:label xml:lang="pt-br">nome do tipo de biblioteca</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#nomeUnidade -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#nomeUnidade">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Unidade"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="pt-br">Designação da Unidade</rdfs:comment>
+        <rdfs:label xml:lang="pt-br">nomde da Editora</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#nomeUnidadeFederativa -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#nomeUnidadeFederativa">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#UnidadeFederativa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="pt-br">Designação da Unidade Federativa (UF)</rdfs:comment>
+        <rdfs:label xml:lang="pt-br">nomde da Unidade Federativa</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1893,7 +2052,7 @@ Exemplo: Marc 21.</rdfs:comment>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Nota"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="pt-br">Notas ou comentários sobre suplementos ou números especiais</rdfs:comment>
-        <rdfs:label xml:lang="pt-br">Esta propriedade descreve anotações que fornecem informações adicionais ou comentários sobre suplementos ou edições especiais associadas ao documento principal. É essencial para detalhar e contextualizar conteúdos adicionais relevantes.</rdfs:label>
+        <rdfs:isDefinedBy xml:lang="pt-br">Esta propriedade descreve anotações que fornecem informações adicionais ou comentários sobre suplementos ou edições especiais associadas ao documento principal. É essencial para detalhar e contextualizar conteúdos adicionais relevantes.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="pt-br">Nota de suplemento</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -2125,17 +2284,6 @@ Esta propriedade descreve se o tipo de material da obra, se o registro é de nat
         <rdfs:comment xml:lang="pt-br">Título principal da obra.</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="pt-br">Esta propriedade descreve o título principal da obra. É essencial para a identificação e referência do documento dentro de um acervo ou sistema de catalogação.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="pt-br">Título próprio</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#tradutor -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#tradutor">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#responsavelIntelectual"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#PublicacaoSeriada"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:label xml:lang="pt-br">Tradutor da publicação</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -2603,7 +2751,7 @@ Um valor de atributo nomen string pode consistir em componentes ou partes.Nesse 
     <!-- http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Nota -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Nota">
-        <rdfs:isDefinedBy xml:lang="pt-br">Comentario de Publicação</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="pt-br">Comentario de Publicação</rdfs:comment>
         <rdfs:label xml:lang="pt-br">Nota ou comentário</rdfs:label>
     </owl:Class>
     
@@ -2816,7 +2964,6 @@ http://psi.oasis-open.org/iso/3166-2/#Region (Usada para representar subdivisõe
     <!-- http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Res -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/kely/ontologies/2023/11/pinakes#Res">
-        <owl:equivalentClass rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:comment xml:lang="pt-br">Res (“coisa” em latim) é a entidade superior do modelo LRM. Res inclui coisas e conceitos materiais ou físicos. Tudo o que é considerado relevante para o universo bibliográfico, que é o universo do discurso neste caso, está incluído. Res é uma superclasse de todas as outras entidades explicitamente definidas, bem como de quaisquer outras entidades não especificamente identificadas. 
 
 (Pressoo E70) Thing: Esta classe geral inclui instâncias discretas e identificáveis de E77 Persistent Item. Podem ser produtos intelectuais ou objectos físicos. Podem possuir forma física, uma codificação eletrônica, ou podem ser um conceito ou estrutura lógica.</rdfs:comment>
@@ -2951,17 +3098,6 @@ https://schema.org/State (Usada para representar estados de um país).</rdfs:see
     
 
 
-    <!-- http://www.w3.org/2002/07/owl#Thing -->
-
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
-        <rdfs:comment xml:lang="pt-br">Entidade superior do modelo que inclui coisas e conceitos materiais ou físicos. Superclasse de todas as outras entidades explicitamente definidas, bem como de quaisquer outras entidades não especificamente identificadas.
-Qualquer tipo de informação abstrata que não é registrada pelo uso de atributos específicos e / ou relacionamentos.</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="pt-br">Qualquer entidade ou recurso do modelo de domínio.</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="pt-br">Coisa</rdfs:label>
-    </rdf:Description>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -2981,6 +3117,23 @@ Qualquer tipo de informação abstrata que não é registrada pelo uso de atribu
     </owl:NamedIndividual>
     <rdf:Description>
         <alfabetacao xml:lang="pt-br"></alfabetacao>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:comment xml:lang="pt-br">Entidade superior do modelo que inclui coisas e conceitos materiais ou físicos. Superclasse de todas as outras entidades explicitamente definidas, bem como de quaisquer outras entidades não especificamente identificadas.
+Qualquer tipo de informação abstrata que não é registrada pelo uso de atributos específicos e / ou relacionamentos.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="pt-br">Qualquer entidade ou recurso do modelo de domínio.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="pt-br">Coisa</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 
